@@ -1,0 +1,196 @@
+.minimal-contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding: 60px 20px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/Devtaimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  transition: background 0.4s ease, color 0.4s ease;
+  position: relative;
+}
+
+.contact-overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-image-section img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.contact-info-section {
+  max-width: 400px;
+  text-align: left;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-section h1 {
+  font-size: 2.4rem;
+  color: #222;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-info-section p {
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contact-detail {
+  margin-bottom: 20px;
+}
+
+.contact-detail h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.contact-detail a {
+  font-size: 1rem;
+  color: #ff9933;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+  color: #e67e22;
+}
+
+/* 🌐 Social Icons */
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #ff9933;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e67e22;
+}
+
+/* 🟢 Floating WhatsApp */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 2rem;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* 🌙 Dark Mode */
+.dark {
+  background-color: #121212;
+  color: #eee;
+  background-image: url('./assets/Devtaimg.jpg');
+}
+
+.dark .contact-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark .contact-info-section {
+  background-color: #2a2a2a;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark .contact-info-section h1,
+.dark .contact-detail h3,
+.dark .contact-detail a,
+.dark .social-icons a {
+  color: #ffcc80;
+}
+
+.dark .contact-detail a:hover,
+.dark .social-icons a:hover {
+  color: #ffa726;
+}
+
+/* 🌙 Toggle */
+.dark-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  z-index: 1000;
+}
+
+.dark .dark-toggle {
+  color: #ffc107;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .contact-overlay {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .contact-image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact-info-section {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-info-section h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info-section p,
+  .contact-detail a {
+    font-size: 0.95rem;
+  }
+
+  .dark-toggle {
+    top: 10px;
+    right: 10px;
+  }
+
+  .floating-whatsapp {
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+}

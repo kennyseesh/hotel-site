@@ -1,0 +1,174 @@
+/* 🌫️ Full-page light background with clean font */
+.gallery-container {
+  background-image: url('./assets/Hotel.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps background fixed while scrolling */
+  background-color: #f3f3f3;     /* Fallback color */
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* 🏷️ Page title */
+.gallery-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* 🔘 Top navigation buttons */
+.gallery-tabs {
+  text-align: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.gallery-tabs button {
+  background-color: #ffffffcc;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 1rem;
+  padding: 10px 16px;
+  margin: 0 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery-tabs button:hover {
+  background-color: #eaeaea;
+  border-color: #999;
+}
+
+/* 🧱 Room section card */
+.gallery-section {
+  background-color: rgba(255, 255, 255, 0.75); /* ⬅️ Semi-transparent */
+  margin: 30px auto;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  position: relative;
+}
+
+.gallery-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.gallery-section .info-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.gallery-section .info-link a {
+  color: #ff9933;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.gallery-section .info-link a:hover {
+  color: #e67e22;
+}
+
+/* 🖼️ Image grid layout */
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* 🖼️ Image styling */
+.gallery-images img {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔍 Popup viewer */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.popup-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ❌ Close button */
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background: #000;
+  border-radius: 50%;
+  padding: 0 12px;
+  line-height: 1;
+}
+
+/* ✅ RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+  .gallery-container {
+    background-attachment: scroll; /* Fixes mobile scroll issues */
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+  }
+
+  .gallery-tabs button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .gallery-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .gallery-images img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .gallery-section .info-link {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+}

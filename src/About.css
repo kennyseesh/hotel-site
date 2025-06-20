@@ -1,0 +1,97 @@
+.about-section {
+  background-image: url('./assets/Devtaimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 60px 20px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔳 Content overlay for better text visibility */
+.about-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Paragraph text */
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* 🌍 Embedded Map container */
+.map-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.map-container iframe {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* 📍 Map button */
+.map-button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #333;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 1px solid #ccc;
+}
+
+.map-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* 🔄 Responsive Styles */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 25px 20px;
+    max-width: 95%;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .map-container {
+    padding: 15px;
+  }
+
+  .map-button {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+  }
+}
