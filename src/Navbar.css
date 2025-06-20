@@ -9,13 +9,17 @@
   transition: width 0.3s ease;
   overflow-x: hidden;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
+/* Expand on hover (Desktop only) */
 .navbar:hover {
   width: 200px;
 }
 
-/* 🍔 Hidden Hamburger (for future mobile toggle) */
+/* 🍔 Hidden Hamburger (for future toggle) */
 .hamburger {
   display: none;
 }
@@ -25,6 +29,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 60px;
+  width: 100%;
 }
 
 /* 🧭 Menu Links */
@@ -38,6 +43,8 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-weight: 500;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar:hover .menu a {
@@ -51,16 +58,17 @@
   color: black;
 }
 
-/* 📱 Mobile View (Optional improvement) */
+/* 📱 Mobile View (Horizontal Navbar) */
 @media screen and (max-width: 768px) {
   .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     height: auto;
     width: 100%;
     flex-direction: row;
-    display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     padding: 10px 0;
   }
 
@@ -70,15 +78,19 @@
 
   .menu {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 0;
+    width: 100%;
   }
 
   .menu a {
     opacity: 1 !important;
     transform: translateX(0) !important;
-    padding: 10px;
-    border-bottom: none;
-    border-left: none;
+    padding: 10px 15px;
+    border: none;
+    text-align: center;
+    font-size: 0.95rem;
   }
 
   .menu a:hover {
