@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/hotel-site/static/css/main.b4d294c0.css",
+    "main.js": "/hotel-site/static/js/main.76cbe874.js",
+    "static/media/Devtaimg.jpg": "/hotel-site/static/media/Devtaimg.74061607bd34f71ec9f9.jpg",
+    "static/media/Hotel4.jpg": "/hotel-site/static/media/Hotel4.61eda9eeed1c5606f84d.jpg",
+    "static/media/Hotel3.jpg": "/hotel-site/static/media/Hotel3.692b0b099588c9c45264.jpg",
+    "static/media/Hotel2.jpg": "/hotel-site/static/media/Hotel2.d28d572e4c203e391d18.jpg",
+    "static/media/Hotel1.jpg": "/hotel-site/static/media/Hotel1.7b5ab6b5132ed46e0d12.jpg",
+    "static/media/tripleroom.jpg": "/hotel-site/static/media/tripleroom.447e2c4bf63f8d5848d1.jpg",
+    "static/media/quadroom2.jpg": "/hotel-site/static/media/quadroom2.7720c5625a716effc721.jpg",
+    "static/media/quadroom.jpg": "/hotel-site/static/media/quadroom.b3f79dc341c5705f2b59.jpg",
+    "static/media/tripleroom2.jpg": "/hotel-site/static/media/tripleroom2.5b3c5459bfd462d0b90c.jpg",
+    "static/media/fiveroom2.jpg": "/hotel-site/static/media/fiveroom2.4dac77c11f125780627c.jpg",
+    "static/media/fiveroom.jpg": "/hotel-site/static/media/fiveroom.0af7fbb6abff48325ba0.jpg",
+    "static/media/doubleroom2.jpg": "/hotel-site/static/media/doubleroom2.702a6921ef5c38ac5488.jpg",
+    "static/media/doubleroom.jpg": "/hotel-site/static/media/doubleroom.540df026a43ee6b12c64.jpg",
+    "static/media/barkotvalley.jpg": "/hotel-site/static/media/barkotvalley.21087e0806d6fa3c1dcf.jpg",
+    "static/media/Nearbyvillages.jpg": "/hotel-site/static/media/Nearbyvillages.76960186c94edadfb89c.jpg",
+    "static/media/lakhamandal.jpg": "/hotel-site/static/media/lakhamandal.a44f8ca9813ad799f3eb.jpg",
+    "static/media/Hotel.jpg": "/hotel-site/static/media/Hotel.00adf99583221db2bda2.jpg",
+    "static/media/thanmandir.jpg": "/hotel-site/static/media/thanmandir.8a978e15f69126b0f43b.jpg",
+    "static/media/contact.jpg": "/hotel-site/static/media/contact.bab269f3e2285ab2c3d9.jpg",
+    "static/media/suryakund.jpg": "/hotel-site/static/media/suryakund.92372b9b8c144e21a2d9.jpg",
+    "static/media/kemptyfalls.jpg": "/hotel-site/static/media/kemptyfalls.cc3fd46f16edbcd6b285.jpg",
+    "static/media/Gangnani.jpg": "/hotel-site/static/media/Gangnani.0b049bf87cc95d49f6b0.jpg",
+    "index.html": "/hotel-site/index.html",
+    "main.b4d294c0.css.map": "/hotel-site/static/css/main.b4d294c0.css.map",
+    "main.76cbe874.js.map": "/hotel-site/static/js/main.76cbe874.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4d294c0.css",
+    "static/js/main.76cbe874.js"
+  ]
+}
